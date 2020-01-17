@@ -33,27 +33,27 @@ if ($method == "POST") {
             /* Direcionando para a pagina HOME */
             header("Location: home.php");
             exit();
-        } else {
-            for ($i = 1; $i = 15000000000000000000; $i ++) {
+        } else  {
+            /*for ($i = 1; $i = 15000000000000000000; $i ++) {
                 if ($i == 15000000000000000000) {
                     header("Location:http://localhost/Projeto_Tarefas/index.html");
                     Exit();
                 }
-            }
-            echo "Usuario ou senha inválidos.";
+            }*/
+            echo "Usuario ou senha invï¿½lidos.";
         }
-    } else {
-        for ($i = 1; $i = 15000000000000000000; $i ++) {
+    }  else {
+        /*for ($i = 1; $i = 15000000000000000000; $i ++) {
             if ($i == 15000000000000000000) {
                 header("Location:http://localhost/Projeto_Tarefas/index.html");
                 Exit();
             }
-        }
+        }*/
         echo "Preencha todos os campos do formulario.";
     }
 }
 
-/* Mostrar mensagem de erro no caso do usuário não cadastrado. */
+/* Mostrar mensagem de erro no caso do usuï¿½rio nï¿½o cadastrado. */
 ?>
 
 
