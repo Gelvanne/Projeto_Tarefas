@@ -29,16 +29,13 @@ if ($method == "POST") {
         /* Inserindo uma nova tarefa. */
         $queryInserir = "INSERT INTO db_tarefas.tb_tarefas (tarefas_titulo, tarefas_finalizada,tarefas_data, usuario_id) VALUES ('$titulo',false,'$data',{$SESS_US->usuario_id})";
         $envioSQL = mysqli_query($SQL, $queryInserir);
-        $_SESSION['MSG_incluir_Tarefa'] = "Tarefas cadastrado com sucesso.";
+        $_SESSION['MSG_incluir_Tarefa'] = "Tarefa cadastrada com sucesso.";
         header("Location:/Projeto_Tarefas/processa/home.php");
         exit();
-    } else /* Fim do teste de valor nulo */
-    {
+    } else /* Fim do teste de valor nulo */ {
         unset($_SESSION['MSG_incluir_Tarefa']);
-        $_SESSION['MSG_incluir_Tarefa'] = "Preencha os campos do formulário.";
+        $_SESSION['MSG_Null'] = "Preencha os campos do formulário.";
         header("Location:/Projeto_Tarefas/processa/home.php");
         exit();
     }
 } /* Fim do teste de POST */
-
-?>
